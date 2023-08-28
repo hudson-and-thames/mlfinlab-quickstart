@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mlfinlab:
+    image: hudsonthames/mlfinlab-base:latest
+    volumes:
+      - ./notebooks:/notebooks
+    ports:
+      - "9000:9000"
+    environment:
+      - MLFINLAB_API_KEY
+      - REPOSITORY_HANDLER_URL
+    command: ["bash", "/startup.sh"]

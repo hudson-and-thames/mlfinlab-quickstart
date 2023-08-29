@@ -1,4 +1,4 @@
-# MLFinlab Quickstart
+# MLFinlab Quickstart 🚀 
 
 This repository is a way to get up and running with `mlfinlab` quickly via Docker.
 

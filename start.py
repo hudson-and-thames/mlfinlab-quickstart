@@ -19,6 +19,7 @@ try:
         if not browser_opened and "127.0.0.1" in line:
             url = line.split("|")[-1].strip()
             webbrowser.open(url)
+            browser_opened = True
 except KeyboardInterrupt:  # If the user interrupts the script...
     # ...first kill the process
     process.terminate()

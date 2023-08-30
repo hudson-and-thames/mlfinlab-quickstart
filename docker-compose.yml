@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mlfinlab:
-    image: hudsonthames/mlfinlab-base:latest
+    image: hudsonthames/mlfinlab-base:buildx-latest
     volumes:
       - ./notebooks:/notebooks
     ports:
